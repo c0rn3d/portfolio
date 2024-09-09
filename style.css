@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace, sans-serif;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
@@ -37,6 +37,34 @@ main {
     margin: 0 auto;
 }
 
+/* Styling for the greeting section */
+#greeting {
+    background: #222; /* Slightly lighter than the main background */
+    padding: 1.5rem;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#greeting h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#greeting p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #ccc; /* Light color for better readability */
+}
+
+/* Styling for the date-time section */
+#date-time {
+    font-size: 1.2rem;
+    color: #f8f8f8; /* Slightly different color to stand out */
+    font-weight: bold;
+}
+
+/* Footer Styles */
 footer {
     background: #333;
     color: #fff;
@@ -68,6 +96,14 @@ footer p {
     footer {
         padding: 0.75rem;
     }
+    
+    #greeting {
+        padding: 1rem;
+    }
+
+    #date-time {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -85,5 +121,13 @@ footer p {
 
     footer {
         padding: 0.5rem;
+    }
+    
+    #greeting {
+        padding: 0.75rem;
+    }
+
+    #date-time {
+        font-size: 0.9rem;
     }
 }
