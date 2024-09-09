@@ -14,3 +14,6 @@ function updateDateTime() {
 
 // Initial call to display date and time
 updateDateTime();
+
+// Update date and time every second
+setInterval(updateDateTime, 1000)
