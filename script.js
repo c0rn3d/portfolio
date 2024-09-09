@@ -17,3 +17,22 @@ updateDateTime();
 
 // Update date and time every second
 setInterval(updateDateTime, 1000)
+
+
+function updateGreeting() {
+    const now = new Date();
+    const hours = now.getHours();
+    let greeting;
+
+    if (hours < 12) {
+        greeting = "Good morning!";
+    } else if (hours < 18) {
+        greeting = "Good afternoon!";
+    } else {
+        greeting = "Good evening!";
+    }
+
+    document.querySelector('#greeting h2').textContent = greeting;
+}
+
+updateGreeting(); // Initial call
